@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: 909e2fbc3cb26d047874bf456db56f6a
+guid: 02e27584b95e99c4cb0ed9e11dc22535
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6723963429988506304
-    second: Spikes_0
+      213: -4082091414760914663
+    second: DSC_Spikes_0
   - first:
-      213: -7010832575621253078
-    second: Spikes_1
+      213: -1583254092558733848
+    second: DSC_Spikes_1
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
-    sRGBTexture: 0
+    sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
@@ -92,7 +92,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Spikes_0
+      name: DSC_Spikes_0
       rect:
         serializedVersion: 2
         x: 0
@@ -106,14 +106,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4eae61a96dd90544be18ff66e30e21a
-      internalID: 6723963429988506304
+      spriteID: 32d280f3525b13d40b8391ce30de531f
+      internalID: -4082091414760914663
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spikes_1
+      name: DSC_Spikes_1
       rect:
         serializedVersion: 2
         x: 500
@@ -127,8 +127,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 110d6badf2b7c054489fa36b842a813d
-      internalID: -7010832575621253078
+      spriteID: 9907021cd4a668443810a072fe083213
+      internalID: -1583254092558733848
       vertices: []
       indices: 
       edges: []
