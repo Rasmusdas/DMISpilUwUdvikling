@@ -2,7 +2,7 @@
 {
 	Properties
 	{
-		_Refraction ("Refraction", Range (0.00, 10.0)) = 1.0
+		_Refraction ("Refraction", Range (0.00, 100.0)) = 1.0
 		_Power ("Power", Range (1.00, 10.0)) = 1.0
 		_AlphaPower ("Vertex Alpha Power", Range (1.00, 10.0)) = 1.0
 		_BumpMap( "Normal Map", 2D ) = "bump" {}
