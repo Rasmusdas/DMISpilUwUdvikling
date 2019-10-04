@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     public float movementSpeed;
     public float jumpSpeed;
+    public bool control = true;
     Rigidbody2D rb;
     bool jump = false;
     private void Start()
@@ -14,19 +15,21 @@ public class PlayerController : MonoBehaviour
     }
     void Update()
     {
-        float x = Input.GetAxis("Horizontal");
-        Vector3 move = transform.right * (x * Time.deltaTime)*movementSpeed;
-        transform.Translate(move.x,move.y,move.z);
-        print(Physics2D.Raycast(transform.position, -transform.up, 0.5f,1));
-        if (Input.GetKeyDown(KeyCode.Space) && !jump)
+        if(control)
         {
-            rb.AddForce(transform.up*jumpSpeed);
-            jump = true;
+            float x = Input.GetAxis("Horizontal");
+            Vector3 move = transform.right * (x * Time.deltaTime) * movementSpeed;
+            transform.Translate(move.x, move.y, move.z);
+            if (Input.GetKeyDown(KeyCode.Space) && !jump)
+            {
+                rb.AddForce(transform.up * jumpSpeed);
+                jump = true;
+            }
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "Ground")
+        if (collision.gameObject.tag == "Ground")
         {
             jump = false;
         }
