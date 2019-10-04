@@ -18,11 +18,11 @@ public class PlayerController : MonoBehaviour
         if(control)
         {
             float x = Input.GetAxis("Horizontal");
-            Vector3 move = transform.right * (x * Time.deltaTime) * movementSpeed;
-            transform.Translate(move.x, move.y, move.z);
+            Vector3 move = transform.right * (x * Time.deltaTime * movementSpeed);
+            rb.velocity = new Vector3(move.x,rb.velocity.y);
             if (Input.GetKeyDown(KeyCode.Space) && !jump)
             {
-                rb.AddForce(transform.up * jumpSpeed);
+                rb.AddForce(transform.up * jumpSpeed,ForceMode2D.Impulse);
                 jump = true;
             }
         }
