@@ -6,10 +6,12 @@ public class MakeBridge : MonoBehaviour
 {
     public Vector3 spawnPoint;
     public GameObject bridge;
+    public GameObject player;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         bridge.SetActive(true);
-        collision.transform.position = spawnPoint;
-        Camera.main.backgroundColor = Color.black;
+        Instantiate(player, spawnPoint,Quaternion.identity);
+        collision.gameObject.GetComponent<PlayerController>().control = false;
+        collision.gameObject.GetComponent<SpriteRenderer>().color = Color.green;
     }
 }
