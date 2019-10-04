@@ -259,7 +259,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0000019073486, y: 0.50920177}
+  m_Offset: {x: 0.0000019073486, y: -3.4674644}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -270,7 +270,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10.941032, y: 1.1784034}
+  m_Size: {x: 10.941032, y: 1.1186028}
   m_EdgeRadius: 0
 --- !u!114 &1123143018
 MonoBehaviour:
@@ -287,6 +287,7 @@ MonoBehaviour:
   spawnPoint: {x: -13, y: 0, z: 0}
   bridge: {fileID: 1993219789}
   player: {fileID: 7817330130050581314, guid: 38ea51dafe38384458db06fe51f0fde8, type: 3}
+  owo: {fileID: 0}
 --- !u!212 &1123143019
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -553,7 +554,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1861195654}
   - component: {fileID: 1861195653}
-  - component: {fileID: 1861195652}
   - component: {fileID: 1861195651}
   m_Layer: 0
   m_Name: Spike (1)
@@ -575,7 +575,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0000019073486, y: -0.60580015}
+  m_Offset: {x: 0.0000019073486, y: -4.552561}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -586,23 +586,8 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10.941032, y: 0.809721}
+  m_Size: {x: 10.941032, y: 0.92931366}
   m_EdgeRadius: 0
---- !u!114 &1861195652
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1861195650}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4918139d62f769a43bdf0b8e53ae9262, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnPoint: {x: -13, y: 0, z: 0}
-  bridge: {fileID: 1993219789}
-  player: {fileID: 7817330130050581314, guid: 38ea51dafe38384458db06fe51f0fde8, type: 3}
 --- !u!212 &1861195653
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -676,13 +661,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1983647674}
   - component: {fileID: 1983647673}
+  - component: {fileID: 1983647675}
   m_Layer: 0
   m_Name: Distortion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1983647673
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -700,7 +686,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 843f79b465fd10d4896cc9f5a5ff527f, type: 2}
+  - {fileID: 2100000, guid: 8675f367e5c60a147898db7e24f986eb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -746,6 +732,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1983647675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1983647672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a41438abdf4fed48bf5505c76b79bec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1993219789
 GameObject:
   m_ObjectHideFlags: 0
