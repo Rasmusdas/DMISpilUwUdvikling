@@ -1,17 +1,7 @@
 fileFormatVersion: 2
 guid: 02e27584b95e99c4cb0ed9e11dc22535
 TextureImporter:
-<<<<<<< HEAD
   internalIDToNameTable: []
-=======
-  internalIDToNameTable:
-  - first:
-      213: -4082091414760914663
-    second: DSC_Spikes_0
-  - first:
-      213: -1583254092558733848
-    second: DSC_Spikes_1
->>>>>>> c8adc9b5f6d8feb9892d3149b2558c82582e290f
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -30,7 +20,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
-  isReadable: 0
+  isReadable: 1
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
@@ -42,7 +32,7 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -100
     wrapU: 1
     wrapV: 1
@@ -50,24 +40,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-<<<<<<< HEAD
-  spriteMode: 1
-=======
   spriteMode: 2
->>>>>>> c8adc9b5f6d8feb9892d3149b2558c82582e290f
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-<<<<<<< HEAD
   spritePixelsToUnits: 250
-=======
-<<<<<<< HEAD
-  spritePixelsToUnits: 100
-=======
-  spritePixelsToUnits: 500
->>>>>>> c8adc9b5f6d8feb9892d3149b2558c82582e290f
->>>>>>> 911237db2572b3fb9b876a4a9371cb8ac0f1bef0
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -106,57 +84,11 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-<<<<<<< HEAD
     sprites: []
-=======
-    sprites:
-    - serializedVersion: 2
-      name: DSC_Spikes_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 250
-        height: 250
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 32d280f3525b13d40b8391ce30de531f
-      internalID: -4082091414760914663
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DSC_Spikes_1
-      rect:
-        serializedVersion: 2
-        x: 500
-        y: 0
-        width: 500
-        height: 500
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9907021cd4a668443810a072fe083213
-      internalID: -1583254092558733848
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
->>>>>>> c8adc9b5f6d8feb9892d3149b2558c82582e290f
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
