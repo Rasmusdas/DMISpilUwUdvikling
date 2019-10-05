@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
             float x = Input.GetAxis("Horizontal");
             Vector3 move = transform.right * (x * Time.deltaTime * movementSpeed);
             rb.velocity = new Vector3(move.x,rb.velocity.y);
+            Debug.Log(Mathf.Approximately(rb.velocity.y, 0));
             if (Input.GetKeyDown(KeyCode.Space) && Mathf.Approximately(rb.velocity.y,0))
             {
                 rb.AddForce(transform.up * jumpSpeed,ForceMode2D.Impulse);
