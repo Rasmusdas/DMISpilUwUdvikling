@@ -10,7 +10,6 @@ public class PlayerController : MonoBehaviour
     public float jumpSpeed;
     Rigidbody2D rb;
     bool jump = false;
-    public KeyCode keyCode;
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -24,7 +23,7 @@ public class PlayerController : MonoBehaviour
         {
             rb.AddForce(transform.up * jumpSpeed, ForceMode2D.Impulse);
         }
-        else if (Input.GetKeyDown(keyCode))
+        else if (Input.GetKeyDown(KeyCode.E))
         {
             TemporaryBlock();
         }
