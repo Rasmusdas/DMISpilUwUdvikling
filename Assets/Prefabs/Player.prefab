@@ -183,7 +183,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 10
   jumpLeniancy: 0.3
-  jumpSpeed: 12
+  jumpSpeed: 13
 --- !u!50 &7817330130050581321
 Rigidbody2D:
   serializedVersion: 4
