@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class DisappearingPlatform : MonoBehaviour
 {
@@ -8,11 +9,12 @@ public class DisappearingPlatform : MonoBehaviour
     public float breakTime;
     public float reappearTime;
     Color c;
-    SpriteRenderer sR;
+    TilemapRenderer sR;
     private void Start()
     {
-        c = GetComponent<SpriteRenderer>().color;
-        sR = GetComponent<SpriteRenderer>();
+        
+        c = GetComponent<TilemapRenderer>().material.color;
+        sR = GetComponent<TilemapRenderer>();
     }
     private void OnCollisionStay2D(Collision2D collision)
     {
@@ -27,7 +29,7 @@ public class DisappearingPlatform : MonoBehaviour
     {
         
         c = new Color(c.r,c.g,c.b,c.a-0.05f);
-        sR.color = c;
+        sR.material.color = c;
         yield return new WaitForSeconds(breakTime / 100);
         if (c.a > 0.01)
         {
@@ -43,7 +45,7 @@ public class DisappearingPlatform : MonoBehaviour
     IEnumerator RebuildPlatform()
     {
         c = new Color(c.r, c.g, c.b, c.a + 0.05f);
-        sR.color = c;
+        sR.material.color = c;
         yield return new WaitForSeconds(breakTime / 100);
         if (c.a > 0.95)
         {
@@ -59,7 +61,7 @@ public class DisappearingPlatform : MonoBehaviour
     void PlacePlatform()
     {
         GetComponent<BoxCollider2D>().isTrigger = false;
-        sR.color = new Color(c.r, c.g, c.b, 1);
+        sR.material.color = new Color(c.r, c.g, c.b, 1);
         c = new Color(c.r, c.g, c.b, 1);
         breaking = false;
     }
