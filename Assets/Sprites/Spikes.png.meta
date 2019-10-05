@@ -8,6 +8,15 @@ TextureImporter:
   - first:
       213: -7010832575621253078
     second: Spikes_1
+  - first:
+      213: 8562923692314260799
+    second: Spikes_2
+  - first:
+      213: -4810244237682102619
+    second: Spikes_3
+  - first:
+      213: -3644641957871353732
+    second: Spikes_4
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -116,10 +125,10 @@ TextureImporter:
       name: Spikes_1
       rect:
         serializedVersion: 2
-        x: 500
+        x: 250
         y: 0
-        width: 500
-        height: 500
+        width: 250
+        height: 300
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,8 +136,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 110d6badf2b7c054489fa36b842a813d
+      spriteID: 235b85ab4ae8adf4c8b0b9228ba9e780
       internalID: -7010832575621253078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spikes_2
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 250
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ce8b9575fd6e4749990e23f57a0323b
+      internalID: 8562923692314260799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spikes_3
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 0
+        width: 250
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 628eebd9a987e9743b5f721471f6d012
+      internalID: -4810244237682102619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spikes_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 250
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 937d6ebfc2fac004dac764601215764c
+      internalID: -3644641957871353732
       vertices: []
       indices: 
       edges: []
