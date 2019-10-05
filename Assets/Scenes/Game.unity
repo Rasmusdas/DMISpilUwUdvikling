@@ -1131,10 +1131,9 @@ GameObject:
   - component: {fileID: 420905135}
   - component: {fileID: 420905134}
   - component: {fileID: 420905133}
-  - component: {fileID: 420905136}
   m_Layer: 0
   m_Name: Paly layer F
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52241,18 +52240,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!114 &420905136
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 420905131}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4918139d62f769a43bdf0b8e53ae9262, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &449975280
 GameObject:
   m_ObjectHideFlags: 0
@@ -54143,6 +54130,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {x: 0, y: 0}
   player: {fileID: 7817330130050581314, guid: 38ea51dafe38384458db06fe51f0fde8, type: 3}
+  timesDied: 0
 --- !u!4 &1450509325
 Transform:
   m_ObjectHideFlags: 0
