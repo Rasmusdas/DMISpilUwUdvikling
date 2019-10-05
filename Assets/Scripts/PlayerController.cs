@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     public float jumpSpeed;
     Rigidbody2D rb;
     bool jump = false;
+    bool grounded = true;
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -19,13 +20,22 @@ public class PlayerController : MonoBehaviour
         float x = Input.GetAxis("Horizontal");
         Vector3 move = transform.right * (x * Time.deltaTime * movementSpeed);
         rb.velocity = new Vector3(move.x,rb.velocity.y);
-        if (Input.GetKeyDown(KeyCode.Space) && Math.Sqrt(rb.velocity.y * rb.velocity.y) < jumpLeniancy)
+        if (Input.GetKeyDown(KeyCode.Space) && grounded)
         {
+            grounded = false;
             rb.AddForce(transform.up * jumpSpeed, ForceMode2D.Impulse);
         }
         else if (Input.GetKeyDown(KeyCode.E))
         {
             TemporaryBlock();
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag=="Ground")
+        {
+            grounded = true;
         }
     }
 
