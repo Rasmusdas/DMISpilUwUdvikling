@@ -20,18 +20,10 @@ public class PlayerController : MonoBehaviour
             float x = Input.GetAxis("Horizontal");
             Vector3 move = transform.right * (x * Time.deltaTime * movementSpeed);
             rb.velocity = new Vector3(move.x,rb.velocity.y);
-            if (Input.GetKeyDown(KeyCode.Space) && !jump)
+            if (Input.GetKeyDown(KeyCode.Space) && rb.velocity.y == 0)
             {
                 rb.AddForce(transform.up * jumpSpeed,ForceMode2D.Impulse);
-                jump = true;
             }
-        }
-    }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Ground")
-        {
-            jump = false;
         }
     }
 }
