@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     public float jumpSpeed;
     Rigidbody2D rb;
     bool jump = false;
+    public KeyCode keyCode;
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -23,6 +24,10 @@ public class PlayerController : MonoBehaviour
         {
             rb.AddForce(transform.up * jumpSpeed, ForceMode2D.Impulse);
         }
+        else if (Input.GetKeyDown(keyCode))
+        {
+            TemporaryBlock();
+        }
     }
 
     public void KillPlayer()
@@ -33,5 +38,17 @@ public class PlayerController : MonoBehaviour
         c.GetComponent<SpriteRenderer>().color = Color.green;
         GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>().SpawnPlayer();
         gameObject.tag = "Dead";
+    }
+
+    private void TemporaryBlock()
+    {
+        var block = GameObject.FindGameObjectWithTag("Tempblock");
+        if (block != null)
+        {
+            Destroy(block);
+        }
+        KillPlayer();
+        gameObject.tag = "Tempblock";
+        gameObject.GetComponent<SpriteRenderer>().color = Color.black;
     }
 }
