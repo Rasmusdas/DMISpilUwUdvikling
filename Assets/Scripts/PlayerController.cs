@@ -15,18 +15,20 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
     }
+
     void Update()
     {
         float x = Input.GetAxis("Horizontal");
-        Vector3 move = transform.right * (x * Time.deltaTime * movementSpeed);
+        Vector3 move = transform.right * (x * movementSpeed);
         rb.velocity = new Vector3(move.x,rb.velocity.y);
         if (Input.GetKeyDown(KeyCode.Space) && grounded)
         {
             grounded = false;
-            rb.AddForce(transform.up * jumpSpeed, ForceMode2D.Impulse);
+            rb.velocity = new Vector2(rb.velocity.x,jumpSpeed);
         }
         else if (Input.GetKeyDown(KeyCode.E))
         {
+            Debug.Log("auwutist");
             TemporaryBlock();
         }
     }
@@ -45,11 +47,9 @@ public class PlayerController : MonoBehaviour
     {
         var c = gameObject;
         gameObject.tag = "Dead";
-        Destroy(c.GetComponent<Rigidbody2D>());
-        Destroy(c.GetComponent<PlayerController>());
-        c.GetComponent<SpriteRenderer>().color = Color.green;
+        c.GetComponent<PlayerController>().enabled = false;
         GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>().SpawnPlayer();
-        
+        Destroy(c.GetComponent<Rigidbody2D>());
     }
 
     private void TemporaryBlock()
