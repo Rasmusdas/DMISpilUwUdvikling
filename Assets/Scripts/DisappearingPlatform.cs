@@ -29,7 +29,6 @@ public class DisappearingPlatform : MonoBehaviour
         c = new Color(c.r,c.g,c.b,c.a-0.05f);
         sR.color = c;
         yield return new WaitForSeconds(breakTime / 100);
-        Debug.Log(c.a);
         if (c.a > 0.01)
         {
             StartCoroutine(BreakPlatform());
