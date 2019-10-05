@@ -32,5 +32,6 @@ public class PlayerController : MonoBehaviour
         Destroy(c.GetComponent<PlayerController>());
         c.GetComponent<SpriteRenderer>().color = Color.green;
         GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>().SpawnPlayer();
+        gameObject.tag = "Dead";
     }
 }
