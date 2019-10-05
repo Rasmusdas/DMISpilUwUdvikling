@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -632,8 +632,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4918139d62f769a43bdf0b8e53ae9262, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPoint: {x: 0, y: 0, z: 0}
-  player: {fileID: 0}
 --- !u!1 &67989832
 GameObject:
   m_ObjectHideFlags: 0
@@ -19162,6 +19160,51 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.461174, y: 1.6524048}
   m_EdgeRadius: 0
+--- !u!1 &1450509323
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1450509325}
+  - component: {fileID: 1450509324}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: GameController
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1450509324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1450509323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 124253256bc2e0a4d8db1b4521a69387, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPoint: {x: 0, y: 0}
+  player: {fileID: 7817330130050581314, guid: 38ea51dafe38384458db06fe51f0fde8, type: 3}
+--- !u!4 &1450509325
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1450509323}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 101.32159, y: -9.997828, z: 49.598053}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1581434060
 GameObject:
   m_ObjectHideFlags: 0
@@ -20910,8 +20953,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4918139d62f769a43bdf0b8e53ae9262, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPoint: {x: 0, y: 0, z: 0}
-  player: {fileID: 0}
 --- !u!1 &2069150045
 GameObject:
   m_ObjectHideFlags: 0
