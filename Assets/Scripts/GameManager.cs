@@ -9,6 +9,11 @@ public class GameManager : MonoBehaviour
 
     // Update is called once per frame
 
+    private void Start()
+    {
+        Screen.SetResolution(1920,1200, true);
+    }
+
     public void SpawnPlayer()
     {
         Instantiate(player, spawnPoint, Quaternion.identity);
