@@ -31,9 +31,10 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag=="Ground")
+        Debug.LogError("Hit stuff");
+        if (collision.gameObject.tag=="Ground" || collision.gameObject.tag == "Dead" || collision.gameObject.tag == "Tempblock")
         {
             grounded = true;
         }
