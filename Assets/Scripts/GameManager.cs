@@ -11,6 +11,6 @@ public class GameManager : MonoBehaviour
     public void SpawnPlayer()
     {
         Instantiate(player, spawnPoint, Quaternion.identity);
-        timesDied++;
+        GameManager.timesDied++;
     }
 }
