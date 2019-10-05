@@ -14,7 +14,7 @@ public class DisappearingPlatform : MonoBehaviour
         c = GetComponent<SpriteRenderer>().color;
         sR = GetComponent<SpriteRenderer>();
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionStay2D(Collision2D collision)
     {
         if(collision.transform.tag == "Player" && !breaking )
         {
@@ -26,7 +26,7 @@ public class DisappearingPlatform : MonoBehaviour
     IEnumerator BreakPlatform()
     {
         
-        c = new Color(c.r,c.g,c.b,c.a-(c.a/breakTime));
+        c = new Color(c.r,c.g,c.b,c.a-0.05f);
         sR.color = c;
         yield return new WaitForSeconds(breakTime / 100);
         Debug.Log(c.a);
@@ -36,13 +36,29 @@ public class DisappearingPlatform : MonoBehaviour
         }
         else
         {
+            GetComponent<BoxCollider2D>().isTrigger = true;
+            yield return new WaitForSeconds(reappearTime);
             StartCoroutine(RebuildPlatform());
         }
     }
     IEnumerator RebuildPlatform()
     {
-        GetComponent<BoxCollider2D>().isTrigger = true;
-        yield return new WaitForSeconds(reappearTime);
+        c = new Color(c.r, c.g, c.b, c.a + 0.05f);
+        sR.color = c;
+        yield return new WaitForSeconds(breakTime / 100);
+        if (c.a > 0.95)
+        {
+            PlacePlatform();
+        }
+        else
+        {
+            StartCoroutine(RebuildPlatform());
+        }
+        
+    }
+
+    void PlacePlatform()
+    {
         GetComponent<BoxCollider2D>().isTrigger = false;
         sR.color = new Color(c.r, c.g, c.b, 1);
         c = new Color(c.r, c.g, c.b, 1);
