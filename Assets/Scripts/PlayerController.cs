@@ -31,6 +31,6 @@ public class PlayerController : MonoBehaviour
         Destroy(c.GetComponent<Rigidbody2D>());
         Destroy(c.GetComponent<PlayerController>());
         c.GetComponent<SpriteRenderer>().color = Color.green;
-        GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().SpawnPlayer();
+        GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>().SpawnPlayer();
     }
 }

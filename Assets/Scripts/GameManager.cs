@@ -8,10 +8,6 @@ public class GameManager : MonoBehaviour
     public GameObject player;
 
     // Update is called once per frame
-    private void Start()
-    {
-        SpawnPlayer();
-    }
 
     public void SpawnPlayer()
     {
