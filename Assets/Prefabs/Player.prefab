@@ -95,8 +95,8 @@ GameObject:
   - component: {fileID: 7817330130050581319}
   - component: {fileID: 7817330130050581316}
   - component: {fileID: 7817330130050581321}
-  - component: {fileID: 211454248}
   - component: {fileID: 211454249}
+  - component: {fileID: 3590387820562980886}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -205,42 +205,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!60 &211454248
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7817330130050581314}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 6200000, guid: e976c6511a131fc4dac7057b56eb9e98, type: 2}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.16, y: 0.16}
-    newSize: {x: 0.16, y: 0.16}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.0067733764, y: 0.05076733}
-      - {x: -0.023618316, y: 0.047114562}
-      - {x: -0.04917221, y: 0.020092202}
-      - {x: -0.050437927, y: -0.02488823}
-      - {x: -0.030644227, y: -0.048636436}
-      - {x: -0.00045547486, y: -0.06911983}
-      - {x: 0.033223726, y: -0.07292195}
-      - {x: 0.031423952, y: -0.05041332}
-      - {x: 0.044695284, y: -0.035194397}
-      - {x: 0.050991822, y: 0.01022358}
-      - {x: 0.04284668, y: 0.029812813}
 --- !u!61 &211454249
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -267,6 +231,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.0813034, y: 0.07112446}
   m_EdgeRadius: 0
+--- !u!58 &3590387820562980886
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7817330130050581314}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: e976c6511a131fc4dac7057b56eb9e98, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.000025844574, y: -0.0036255836}
+  serializedVersion: 2
+  m_Radius: 0.052777577
 --- !u!1001 &1929973298
 PrefabInstance:
   m_ObjectHideFlags: 0
