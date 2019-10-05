@@ -6,6 +6,9 @@ public class Spike : MonoBehaviour
 {    
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        collision.GetComponent<PlayerController>().KillPlayer();
+        if (collision.gameObject.tag == "Player")
+        {
+            collision.GetComponent<PlayerController>().KillPlayer();
+        }
     }
 }
