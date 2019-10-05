@@ -182,6 +182,7 @@ MonoBehaviour:
   movementSpeed: 400
   jumpLeniancy: 0.3
   jumpSpeed: 7
+  keyCode: 101
 --- !u!50 &7817330130050581321
 Rigidbody2D:
   serializedVersion: 4
