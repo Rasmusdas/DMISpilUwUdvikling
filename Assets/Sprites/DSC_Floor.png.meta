@@ -116,10 +116,10 @@ TextureImporter:
       name: DSC_Floor_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 666.6666
-        width: 333.33334
-        height: 333.33334
+        x: 229
+        y: 126
+        width: 500
+        height: 500
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,176 +127,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1bb9d335e490b814a9d4d36fb757c9bb
+      spriteID: a4058af93cfe060498c959c213c8bc5e
       internalID: 2733757938474021176
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DSC_Floor_1
-      rect:
-        serializedVersion: 2
-        x: 333
-        y: 666.6666
-        width: 333.33334
-        height: 333.33334
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7061e5df3b8ac2642a45396a6f39e3ea
-      internalID: 1276107777966057368
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DSC_Floor_2
-      rect:
-        serializedVersion: 2
-        x: 666
-        y: 666.6666
-        width: 333.33334
-        height: 333.33334
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4e79cfd669eb0fd438918ec6a35e3e74
-      internalID: 7239516962048923980
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DSC_Floor_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 333.66666
-        width: 333.33334
-        height: 333.33334
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: df6cf44d25113474dab67badd79ef03d
-      internalID: 1446619249778766055
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DSC_Floor_4
-      rect:
-        serializedVersion: 2
-        x: 333
-        y: 333.66666
-        width: 333.33334
-        height: 333.33334
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 88be1feb309db8249bd7fe853d629b4b
-      internalID: 2337712413930398043
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DSC_Floor_5
-      rect:
-        serializedVersion: 2
-        x: 666
-        y: 333.66666
-        width: 333.33334
-        height: 333.33334
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b27477ce8eccb444cb135af3e7d7f990
-      internalID: 8513337972121619251
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DSC_Floor_6
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0.6666565
-        width: 333.33334
-        height: 333.33334
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 80e361797b9037446854f0da56428f56
-      internalID: -1357535406550179949
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DSC_Floor_7
-      rect:
-        serializedVersion: 2
-        x: 333
-        y: 0.6666565
-        width: 333.33334
-        height: 333.33334
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 18e65ed59bb5b8e489a2e815ee655260
-      internalID: -6837489279719517402
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DSC_Floor_8
-      rect:
-        serializedVersion: 2
-        x: 666
-        y: 0.6666565
-        width: 333.33334
-        height: 333.33334
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8ee909db47eebd2459594f402d90af1f
-      internalID: 7695316717839000377
       vertices: []
       indices: 
       edges: []
