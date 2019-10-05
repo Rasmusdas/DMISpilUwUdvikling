@@ -33,9 +33,10 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.LogError("Hit stuff");
+       
         if (collision.gameObject.tag=="Ground" || collision.gameObject.tag == "Dead" || collision.gameObject.tag == "Tempblock")
         {
+            Debug.LogError("Hit correct stuff");
             grounded = true;
         }
     }

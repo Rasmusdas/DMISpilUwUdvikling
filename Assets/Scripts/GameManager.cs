@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public Vector2 spawnPoint;
     public GameObject player;
-    public int timesDied;
+    public static int timesDied;
 
     public void SpawnPlayer()
     {
