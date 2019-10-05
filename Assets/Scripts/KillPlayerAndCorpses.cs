@@ -6,10 +6,14 @@ public class KillPlayerAndCorpses : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        collision.GetComponent<PlayerController>().KillPlayer();
-        foreach (var item in GameObject.FindGameObjectsWithTag("Dead"))
+        if (collision.tag == "Player")
         {
-            Destroy(item);
+            collision.GetComponent<PlayerController>().KillPlayer();
+            foreach (var item in GameObject.FindGameObjectsWithTag("Dead"))
+            {
+                Destroy(item);
+            }
         }
+        
     }
 }

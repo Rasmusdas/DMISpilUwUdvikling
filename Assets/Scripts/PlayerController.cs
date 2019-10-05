@@ -43,11 +43,12 @@ public class PlayerController : MonoBehaviour
     public void KillPlayer()
     {
         var c = gameObject;
+        gameObject.tag = "Dead";
         Destroy(c.GetComponent<Rigidbody2D>());
         Destroy(c.GetComponent<PlayerController>());
         c.GetComponent<SpriteRenderer>().color = Color.green;
         GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>().SpawnPlayer();
-        gameObject.tag = "Dead";
+        
     }
 
     private void TemporaryBlock()
