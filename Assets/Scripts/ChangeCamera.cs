@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class ChangeCamera : MonoBehaviour
 {
-    public GameObject oldCam;
     public GameObject newCam;
-    private void OnTriggerEnter(Collider other)
+
+    private void OnTriggerStay2D(Collider2D other)
     {
-        newCam.SetActive(true);
-        oldCam.SetActive(false);
+        if(!newCam.activeSelf && other.tag == "Player")
+        {
+            Camera.main.gameObject.SetActive(false);
+            newCam.SetActive(true);
+        }
     }
 }
