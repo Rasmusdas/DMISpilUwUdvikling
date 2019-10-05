@@ -18,6 +18,6 @@ public class PlayerShaderManipulation : MonoBehaviour
         {
             _ = 0;
         }
-        mR.sharedMaterial.SetVector("_PulseMinMax", new Vector4(0,_, 0,0));
+        mR.sharedMaterial.SetVector("_PulseMinMax", new Vector4(_/2,_, 0,0));
     }
 }
