@@ -37,7 +37,7 @@ public class DisappearingPlatform : MonoBehaviour
         }
         else
         {
-            GetComponent<BoxCollider2D>().isTrigger = true;
+            GetComponent<TilemapCollider2D>().isTrigger = true;
             yield return new WaitForSeconds(reappearTime);
             StartCoroutine(RebuildPlatform());
         }
@@ -60,7 +60,7 @@ public class DisappearingPlatform : MonoBehaviour
 
     void PlacePlatform()
     {
-        GetComponent<BoxCollider2D>().isTrigger = false;
+        GetComponent<TilemapCollider2D>().isTrigger = false;
         sR.material.color = new Color(c.r, c.g, c.b, 1);
         c = new Color(c.r, c.g, c.b, 1);
         breaking = false;
