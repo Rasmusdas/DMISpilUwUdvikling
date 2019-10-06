@@ -14,11 +14,12 @@ public class EndGameScript : MonoBehaviour
         {
             if (heaven)
             {
-                other.GetComponent<Rigidbody2D>().gravityScale = -1;
+                other.GetComponent<Rigidbody2D>().gravityScale = 0;
                 other.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 15);
                 Destroy(other.GetComponent<PlayerController>());
             }
             GameObject.FindGameObjectWithTag("EndGame").GetComponent<EndGameScript>().c = c;
+            Debug.Log("o hai mark");
             StartCoroutine(GameObject.FindGameObjectWithTag("EndGame").GetComponent<EndGameScript>().FadeToBlack());
             
         }
@@ -27,10 +28,11 @@ public class EndGameScript : MonoBehaviour
 
     IEnumerator FadeToBlack()
     {
-        Debug.Log(c);
+        
         yield return new WaitForSeconds(fadeTime/100);
         sR.material.color = new Color(c.r, c.g, c.b, c.a+0.01f);
-        if(c.a <= 0.99)
+        c = sR.material.color;
+        if (c.a <= 0.99)
         {
             StartCoroutine(FadeToBlack());
         }
