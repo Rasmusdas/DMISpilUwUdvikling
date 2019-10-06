@@ -54,6 +54,9 @@ public class PlayerController : MonoBehaviour
         Destroy(c.GetComponent<Rigidbody2D>());
         Destroy(blob.GetComponent<PlayerShaderManipulation>());
         Destroy(cam);
+        Destroy(c.GetComponent<CircleCollider2D>());
+        Destroy(c.GetComponent<AudioListener>());
+        Destroy(c.GetComponent<AudioSource>());
     }
 
     private void TemporaryBlock()

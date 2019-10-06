@@ -10,7 +10,8 @@ public class GameManager : MonoBehaviour
 
     public void SpawnPlayer()
     {
-        Instantiate(player, spawnPoint, Quaternion.identity);
+        var temp = Instantiate(player, spawnPoint, Quaternion.identity);
+        temp.GetComponent<AudioSource>().Play();
         GameManager.timesDied++;
     }
 }
