@@ -8,6 +8,7 @@ TagManager:
   - Dead
   - Temp
   - Tempblock
+  - EndGame
   layers:
   - Default
   - TransparentFX

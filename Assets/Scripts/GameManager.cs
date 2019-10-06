@@ -11,7 +11,6 @@ public class GameManager : MonoBehaviour
     public void SpawnPlayer()
     {
         var temp = Instantiate(player, spawnPoint, Quaternion.identity);
-        temp.GetComponent<AudioSource>().Play();
         GameManager.timesDied++;
     }
 }
