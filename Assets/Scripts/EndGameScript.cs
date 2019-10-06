@@ -8,6 +8,7 @@ public class EndGameScript : MonoBehaviour
     public SpriteRenderer sR;
     public bool heaven;
     public Color c;
+    public Sprite s;
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Player")
@@ -19,6 +20,7 @@ public class EndGameScript : MonoBehaviour
                 Destroy(other.GetComponent<PlayerController>());
             }
             GameObject.FindGameObjectWithTag("EndGame").GetComponent<EndGameScript>().c = c;
+            GameObject.FindGameObjectWithTag("EndGame").GetComponent<EndGameScript>().s = s;
             Debug.Log("o hai mark");
             StartCoroutine(GameObject.FindGameObjectWithTag("EndGame").GetComponent<EndGameScript>().FadeToBlack());
             
@@ -28,6 +30,7 @@ public class EndGameScript : MonoBehaviour
 
     IEnumerator FadeToBlack()
     {
+        sR.sprite = s;
         yield return new WaitForSeconds(fadeTime/100);
         sR.material.color = new Color(c.r, c.g, c.b, c.a+0.01f);
         c = sR.material.color;
