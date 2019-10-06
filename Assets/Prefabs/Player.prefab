@@ -4848,8 +4848,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c645010580556245ac68f04fe2dffc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mR: {fileID: 0}
-  amountOfTimesTilNoPulse: 10
 --- !u!1 &7817330130050581314
 GameObject:
   m_ObjectHideFlags: 0
@@ -4949,6 +4947,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c320401468031745ba384957257070f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cam: {fileID: 1565843872}
+  blob: {fileID: 5900635368275017687}
   movementSpeed: 10
   jumpLeniancy: 0.3
   jumpSpeed: 15
