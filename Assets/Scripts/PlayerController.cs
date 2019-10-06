@@ -5,6 +5,8 @@ using System;
 
 public class PlayerController : MonoBehaviour
 {
+    public GameObject cam;
+    public GameObject blob;
     public float movementSpeed;
     public float jumpLeniancy = 0.1f;
     public float jumpSpeed;
@@ -38,18 +40,20 @@ public class PlayerController : MonoBehaviour
        
         if (collision.gameObject.tag=="Ground" || collision.gameObject.tag == "Dead" || collision.gameObject.tag == "Tempblock")
         {
-            Debug.LogError("Hit correct stuff");
             grounded = true;
         }
     }
 
     public void KillPlayer()
     {
+        PlayerShaderManipulation.UpdateShader();
         var c = gameObject;
         gameObject.tag = "Dead";
         c.GetComponent<PlayerController>().enabled = false;
         GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>().SpawnPlayer();
         Destroy(c.GetComponent<Rigidbody2D>());
+        Destroy(blob.GetComponent<PlayerShaderManipulation>());
+        Destroy(cam);
     }
 
     private void TemporaryBlock()
