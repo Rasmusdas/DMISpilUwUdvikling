@@ -10,7 +10,7 @@ public class TilemapDisabler : MonoBehaviour
     public int requiredDeaths;
     void Update()
     {
-        if(requiredDeaths >= GameManager.timesDied && !tileToEnable.activeSelf)
+        if(requiredDeaths <= GameManager.timesDied && !tileToEnable.activeSelf)
         {
             tileToDisable.SetActive(false);
             tileToEnable.SetActive(true);

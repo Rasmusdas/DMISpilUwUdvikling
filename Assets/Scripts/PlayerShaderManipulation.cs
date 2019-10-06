@@ -9,11 +9,12 @@ public class PlayerShaderManipulation : MonoBehaviour
     public static int amountOfTimesTilNoPulse = 25;
     private void Start()
     {
-        if (TryGetComponent(out SpriteRenderer _SR))
+        if (TryGetComponent(out SpriteRenderer _))
         {
             sR = GetComponent<SpriteRenderer>();
         }
-        if (TryGetComponent(out MeshRenderer _MR))
+
+        if (TryGetComponent(out MeshRenderer _))
         {
             mR = GetComponent<MeshRenderer>();
         }
@@ -27,7 +28,13 @@ public class PlayerShaderManipulation : MonoBehaviour
         {
             _ = 0;
         }
-        mR.sharedMaterial.SetVector("_PulseMinMax", new Vector4(_/2,_, 0,0));
-        sR.sharedMaterial.SetFloat("_DistAmount",GameManager.timesDied*2 / (float)amountOfTimesTilNoPulse);
+        if(mR)
+        {
+            mR.sharedMaterial.SetVector("_PulseMinMax", new Vector4(_ / 2, _, 0, 0));
+        }
+        if(sR)
+        {
+            sR.sharedMaterial.SetFloat("_DistAmount", GameManager.timesDied * 2 / (float)amountOfTimesTilNoPulse);
+        }
     }
 }
