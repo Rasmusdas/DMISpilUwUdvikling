@@ -28,7 +28,6 @@ public class EndGameScript : MonoBehaviour
 
     IEnumerator FadeToBlack()
     {
-        
         yield return new WaitForSeconds(fadeTime/100);
         sR.material.color = new Color(c.r, c.g, c.b, c.a+0.01f);
         c = sR.material.color;
