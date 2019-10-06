@@ -6,7 +6,7 @@ public class PlayerShaderManipulation : MonoBehaviour
 {
     public static MeshRenderer mR;
     public static SpriteRenderer sR;
-    public static int amountOfTimesTilNoPulse = 25;
+    public static int amountOfTimesTilNoPulse = 15;
     private void Start()
     {
         if (TryGetComponent(out SpriteRenderer _))
