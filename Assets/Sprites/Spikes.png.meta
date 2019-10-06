@@ -17,6 +17,9 @@ TextureImporter:
   - first:
       213: -3644641957871353732
     second: Spikes_4
+  - first:
+      213: 7573331673453511767
+    second: Spikes_5
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -193,7 +196,7 @@ TextureImporter:
         width: 250
         height: 450
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -201,6 +204,27 @@ TextureImporter:
       bones: []
       spriteID: 937d6ebfc2fac004dac764601215764c
       internalID: -3644641957871353732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spikes_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 250
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ed8fae6261e15d458bd73d8441bcdf0
+      internalID: 7573331673453511767
       vertices: []
       indices: 
       edges: []
