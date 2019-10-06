@@ -4931,7 +4931,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeTime: 1
   sR: {fileID: 2053552316}
-  c: {r: 0, g: 0, b: 0, a: 0}
+  c: {r: 1, g: 1, b: 1, a: 0}
 --- !u!114 &1259465758
 MonoBehaviour:
   m_ObjectHideFlags: 0
