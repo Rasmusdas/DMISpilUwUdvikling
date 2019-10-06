@@ -99,5 +99,9 @@ Material:
     - _BaseColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+<<<<<<< HEAD
     - _PulseMinMax: {r: 0.44, g: 0.88, b: 0, a: 0}
+=======
+    - _PulseMinMax: {r: 0.5, g: 1, b: 0, a: 0}
+>>>>>>> e2a07d0c84b776ba2e2017fbf3f13507e9fcb6e4
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
